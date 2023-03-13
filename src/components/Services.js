@@ -9,23 +9,23 @@ import { fadeIn } from "../variants";
 //services data
 const services = [
 	{
-		name: "UI/UX Design",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id qui temporibus cum omnis reprehenderit alias eius quam pariatur porro.",
+		name: "ReactJs",
+		description: "I am proficient in using ReactJS to develop web applications, creating reusable components that improve efficiency, maintainability, and reusability of code.",
 		link: "Learn more"
 	},
 	{
-		name: "Development",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id qui temporibus cum omnis reprehenderit alias eius quam pariatur porro.",
+		name: "Redux+Redux Toolkit",
+		description: "Using Redux and Redux Toolkit to manage state in web applications, creating a predictable and centralized way of handling data flow between components.",
 		link: "Learn more"
 	},
 	{
-		name: "Digital Marketing",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id qui temporibus cum omnis reprehenderit alias eius quam pariatur porro.",
+		name: "HTML/CSS/JS, TypeScript",
+		description: "I have good skills in website layout using html/css. And good knowledge of Javascript + TypeScript programming languages. With their help, I develop a beautiful interface and interactivity of the site.",
 		link: "Learn more"
 	},
 	{
-		name: "Product Branding",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia id qui temporibus cum omnis reprehenderit alias eius quam pariatur porro.",
+		name: "GIT",
+		description: "I use Git for version control and collaboration on projects, ensuring that changes are tracked, organized, and safely stored. I am familiar with basic Git commands such as pull, push, merge, and commit.",
 		link: "Learn more"
 	}
 ]
@@ -34,7 +34,7 @@ const Services = () => {
 	return (
 		<section className='section h-full' id='services'>
 			<div className="container mx-auto">
-				<div className='flex flex-col lg:flex-row'>
+				<div className='flex flex-col lg:flex-row '>
 					{/* text & image */}
 					<motion.div
 						variants={fadeIn("right", 0.3)}
@@ -42,7 +42,7 @@ const Services = () => {
 						whileInView={"show"}
 						viewport={{ once: true, amount: 0.3 }}
 						className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-						<h2 className='h2 text-accent mb-6'>What i Do.</h2>
+						<h2 className='h2 text-accent mb-6'>What i know.</h2>
 						<h3 className='h3 max-w-[455px] mb-16'>I'm a Front-end developer with over 1 year of experience.</h3>
 						<button className='btn btn-sm'>See my work</button>
 					</motion.div>
@@ -52,16 +52,16 @@ const Services = () => {
 						initial="hidden"
 						whileInView={"show"}
 						viewport={{ once: true, amount: 0.3 }}
-						className='flex-1'>
+						className='flex-1 '>
 						{/* service list */}
 						<div>
 							{services.map((service, index) => {
 								//destructure service
 								const { name, description, link } = service
 								return (
-									<div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+									<div className='border-b border-white/20 lg:h-[150px] mb-[50px] flex md:h-[200px]' key={index}>
 										<div className='max-w-[476px]'>
-											<h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
+											<h4 className='lg:text-[20px] tracking-wider font-primary font-semibold mb-10'>{name}</h4>
 											<p className='font-secondary leading-tight'>{description}</p>
 										</div>
 										<div className='flex flex-col flex-1 items-end'>

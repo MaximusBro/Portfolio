@@ -29,13 +29,12 @@ const About = () => {
 					variants={fadeIn("left", 0.5)}
 					initial="hidden"
 					whileInView={"show"}
-					viewport={{ once: false, amount: 0.3 }}
+					viewport={{ once: true, amount: 0.3 }}
 					className='flex-1'>
 					<h2 className='h2 text-accent'>About me.</h2>
 					<h3 className='h3 mb-4'>I'm a Front-end developer with over 1 year of experience.</h3>
-					<p className='mb-6'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-						Aperiam itaque fuga sed incidunt iure aut nihil,
-						autem velit praesentium rem!
+					<p className='mb-6'>Specializing
+						in creating responsive and user-friendly interfaces using modern web technologies such as HTML5, CSS3, and JavaScript.
 					</p>
 					{/* stats */}
 					<div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -43,38 +42,39 @@ const About = () => {
 							<div className='text-[40px] font-tertiary text-gradient mb-2' >
 								{
 									inView ?
-										< CountUp start={0} end={13} duration={3} />
+										< CountUp start={0} end={16} duration={3} />
 										: null}
 							</div>
 							<div className='font-primary text-sm tracking-[2px]'>
-								Years of <br />
-								Experience
+								Skills <br />
+
 							</div>
 						</div>
 						<div>
 							<div className='text-[40px] font-tertiary text-gradient mb-2' >
 								{
 									inView ?
-										< CountUp start={0} end={15} duration={3} />
+										< CountUp start={0} end={21} duration={3} />
 										: null}
-								k+
+
 							</div>
 							<div className='font-primary text-sm tracking-[2px]'>
-								Projects of <br />
-								Completed
+								Projects  <br />
+
 							</div>
 						</div>
 						<div>
 							<div className='text-[40px] font-tertiary text-gradient mb-2' >
 								{
 									inView ?
-										< CountUp start={0} end={12} duration={3} />
+										< CountUp start={0} end={1} duration={3} />
 										: null}
-								k+
+
 							</div>
 							<div className='font-primary text-sm tracking-[2px]'>
-								Satisfied<br />
-								Clients
+								Years of<br />
+								experience
+
 							</div>
 						</div>
 					</div>

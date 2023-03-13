@@ -21,7 +21,7 @@ const Work = () => {
 						{/* text */}
 						<div className='flex-1 flex flex-col  mb-10 lg:mb-0'>
 							<h2 className='h2 leading-tight text-accent'>My Latest <br />Work.</h2>
-							<p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur.</p>
+							<p className='max-w-sm mb-16'>My latest ones, which can be found on GitHub</p>
 							<button className='btn btn-sm'>View all projects</button>
 						</div>
 						{/* img */}

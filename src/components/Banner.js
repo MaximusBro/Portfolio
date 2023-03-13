@@ -25,7 +25,7 @@ const Banner = () => {
 					<motion.div variants={fadeIn("up", 0.4)}
 						initial="hidden"
 						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
+						viewport={{ once: true, amount: 0.7 }}
 						className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-1'>
 						<span className='text-white mr-2 mb-10'>I am a </span>
 						<TypeAnimation
@@ -45,15 +45,15 @@ const Banner = () => {
 						variants={fadeIn("up", 0.5)}
 						initial="hidden"
 						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
-						className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit. Eius sunt quibusdam
-						maiores quam pariatur cumque hic rem vel sequi ex qui error,
-						fugiat eaque blanditiis vitae doloribus perspiciatis, corrupti optio.</motion.p>
+						viewport={{ once: true, amount: 0.7 }}
+						className='mb-8 max-w-lg mx-auto lg:mx-0'>Hello! I'm a Frontend React Developer.
+						I specialize in developing web applications using HTML/CSS,JS,ReactJs.
+						I have experience creating simple and complex interfaces, and I'm familiar with standard libraries and frameworks such as Redux, ReduxToolkit, TailWind,  and Bootstrap.
+						I'm always eager to learn new technologies and improve my skills, and I'm ready to collaborate with a team and complete assigned tasks.</motion.p>
 					<motion.div variants={fadeIn("up", 0.6)}
 						initial="hidden"
 						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
+						viewport={{ once: true, amount: 0.7 }}
 						className='flex gap-x-6 items-center mb-12  max-w-max mx-auto lg:mx-0'>
 						<button className='btn btn-lg'>Contact me</button>
 						<a href="#" className='text-gradient btn-link'>My Portfolio</a>
@@ -61,7 +61,7 @@ const Banner = () => {
 					<motion.div initial="hidden"
 						variants={fadeIn("up", 0.8)}
 						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
+						viewport={{ once: true, amount: 0.7 }}
 						className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
 						<a href="#">
 							<FaYoutube />
@@ -75,12 +75,11 @@ const Banner = () => {
 					</motion.div>
 				</div>
 
-
 				{ /*image */}
 				<motion.div initial="hidden"
 					variants={fadeIn("down", 0.3)}
 					whileInView={"show"}
-
+					viewport={{ once: true, amount: 0.7 }}
 					className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] '>
 					<img src={Image} alt="" />
 				</motion.div>
