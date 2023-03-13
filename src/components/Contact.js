@@ -21,7 +21,7 @@ const Contact = () => {
 		emailjs.send(process.env.REACT_APP_SERVICE_KEY,
 			process.env.REACT_APP_TEMPLATE_KEY, templateParams,
 			process.env.REACT_APP_PRIVATE_KEY)
-			.then((result) => {
+			.then(() => {
 				setLoading(false)
 				onSubmitProps.resetForm();
 			}, (error) => {
