@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 //img
-import img1 from "../assets/portfolio-img1.png";
-import img2 from "../assets/portfolio-img2.png";
-import img3 from "../assets/portfolio-img3.png";
+import img1 from "../assets/portfolioImg1.png";
+import img2 from "../assets/portfolioImg2.png";
+import img3 from "../assets/portfolioImg3.png";
 const Work = () => {
 	return (
 		<section className='section h-full' id='work'>
