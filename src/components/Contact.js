@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 //motion
 import { motion } from "framer-motion";
 //variants
@@ -12,7 +12,32 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 	const [loading, setLoading] = useState(false)
-	const statusLoading = useState("")
+	const [isSubmited, setIsSubmited] = useState(false);
+	const [errorForm, setErrorForm] = useState({ message: "Something wrong. Try later", status: false })
+	console.log("render")
+	const messageResult = (setIsSubmited, time) => {
+		setIsSubmited(true);
+		setTimeout(() => {
+			setIsSubmited(false);
+		}, time)
+	}
+	const errorMessage = (setErrorForm, time) => {
+		setErrorForm(state => {
+			return {
+				...state,
+				status: true
+			}
+		})
+		setTimeout(() => {
+			setErrorForm(state => {
+				return {
+					...state,
+					status: true
+				}
+			})
+		}, time)
+	}
+
 	const onSubmit = (values, onSubmitProps) => {
 		setLoading(true)
 		const templateParams = {
@@ -22,12 +47,14 @@ const Contact = () => {
 			process.env.REACT_APP_TEMPLATE_KEY, templateParams,
 			process.env.REACT_APP_PRIVATE_KEY)
 			.then(() => {
-				setLoading(false)
+				setLoading(false);
+				messageResult(setIsSubmited, 2000)
 				onSubmitProps.resetForm();
-			}, (error) => {
-				setLoading(false)
+			}).catch(error => {
+				setLoading(false);
+				errorMessage(setErrorForm, 3000)
 				console.log(error.text);
-			});
+			})
 	}
 	return (
 		<section className=' py-16 lg:section' id='contact'>
@@ -82,7 +109,12 @@ const Contact = () => {
 								id="message"
 								placeholder='Your message' />
 							<ErrorMessage className=' text-red-700' name="message" component="div" />
-							<div>{loading ? "Loading..." : ""}</div>
+							{/* Status form */}
+
+							{loading ? <div>Loading...</div> : ""}
+							{isSubmited ? <div className=' text-sucess'>Success</div> : ""}
+							{errorForm.status ? <div className=' text-red-600'>{errorForm.message}</div> : ""}
+							{/* Submit */}
 							<button type='submit' className='btn btn-lg '>Send message</button>
 						</Form>
 					</Formik>
@@ -92,4 +124,4 @@ const Contact = () => {
 	)
 };
 
-export default Contact;
+export default memo(Contact);
