@@ -14,7 +14,7 @@ const Contact = () => {
 	const [loading, setLoading] = useState(false)
 	const [isSubmited, setIsSubmited] = useState(false);
 	const [errorForm, setErrorForm] = useState({ message: "Something wrong. Try later", status: false })
-	console.log("render")
+
 	const messageResult = (setIsSubmited, time) => {
 		setIsSubmited(true);
 		setTimeout(() => {
