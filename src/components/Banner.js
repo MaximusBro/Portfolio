@@ -2,14 +2,14 @@ import React from 'react';
 //images
 import Image from "../assets/avatar.svg";
 //icons
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 //type animations  
 import { TypeAnimation } from "react-type-animation";
 //motion
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
-
+import { Link } from "react-scroll"
 const Banner = () => {
 	return <section className='h-full flex items-center mb-[100px]' id='home'>
 		<div className="container mx-auto">
@@ -55,22 +55,36 @@ const Banner = () => {
 						whileInView={"show"}
 						viewport={{ once: true, amount: 0.7 }}
 						className='flex gap-x-6 items-center mb-12  max-w-max mx-auto lg:mx-0'>
-						<button className='btn btn-lg'>Contact me</button>
-						<a href="#" className='text-gradient btn-link'>My Portfolio</a>
+						<Link
+							smooth={true}
+							spy={true}
+							to='contact'
+							as='button'
+							className=' cursor-pointer btn btn-lg text-center items-center flex'>
+							Contact me
+						</Link>
+
+						<Link
+							smooth={true}
+							spy={true}
+
+							to='work'
+							as='a'
+							className=' cursor-pointer text-gradient btn-link bg-inherit'>
+							Portfolio
+						</Link>
 					</motion.div>
 					<motion.div initial="hidden"
 						variants={fadeIn("up", 0.8)}
 						whileInView={"show"}
 						viewport={{ once: true, amount: 0.7 }}
 						className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-						<a href="#">
-							<FaYoutube />
-						</a>
-						<a href="#">
+
+						<a href="https://github.com/MaximusBro" rel="noreferrer" target="_blank">
 							<FaGithub />
 						</a>
-						<a href="#">
-							<FaDribbble />
+						<a href="https://linkedin.com/in/maksymshydlovskyi" rel="noreferrer" target="_blank">
+							<FaLinkedinIn />
 						</a>
 					</motion.div>
 				</div>

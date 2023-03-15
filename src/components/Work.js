@@ -22,7 +22,7 @@ const Work = () => {
 						<div className='flex-1 flex flex-col  mb-10 lg:mb-0'>
 							<h2 className='h2 leading-tight text-accent'>My Latest <br />Work.</h2>
 							<p className='max-w-sm mb-16'>My latest ones, which can be found on GitHub</p>
-							<button className='btn btn-sm'>View all projects</button>
+							<a className='btn btn-sm  text-center flex items-center justify-center' href="https://github.com/MaximusBro" rel="noreferrer" target="_blank" >View all projects</a>
 						</div>
 						{/* img */}
 						<div className='group relative overflow-hidden border-2 border-white/50 rounded-x1'>
