@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from "framer-motion"
 //variant
 import { fadeIn } from '../variants';
+import ContactBtns from '../UI/ContactBtns';
 
 const About = () => {
 	const [ref, inView] = useInView({
@@ -79,10 +80,7 @@ const About = () => {
 						</div>
 					</div>
 					<div className='flex gap-x-8 items-center'>
-						<button className='btn btn-lg'>Contact me</button>
-						<a href="#" className='text-gradient btn-link'>
-							My Portfolio
-						</a>
+						<ContactBtns />
 					</div>
 				</motion.div>
 			</div>

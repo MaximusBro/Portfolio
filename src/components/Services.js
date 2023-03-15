@@ -11,22 +11,30 @@ const services = [
 	{
 		name: "ReactJs",
 		description: "I am proficient in using ReactJS to develop web applications, creating reusable components that improve efficiency, maintainability, and reusability of code.",
-		link: "Learn more"
+		link: "Learn more",
+		linkHref: "https://www.linkedin.com/in/maksymshydlovskyi/details/skills/",
+		href: "https://reactjs.org/"
 	},
 	{
 		name: "Redux+Redux Toolkit",
 		description: "Using Redux and Redux Toolkit to manage state in web applications, creating a predictable and centralized way of handling data flow between components.",
-		link: "Learn more"
+		link: "Learn more",
+		linkHref: "https://www.linkedin.com/in/maksymshydlovskyi/details/skills/",
+		href: "https://redux.js.org/"
 	},
 	{
 		name: "HTML/CSS/JS, TypeScript",
 		description: "I have good skills in website layout using html/css. And good knowledge of Javascript + TypeScript programming languages. With their help, I develop a beautiful interface and interactivity of the site.",
-		link: "Learn more"
+		link: "Learn more",
+		linkHref: "https://www.linkedin.com/in/maksymshydlovskyi/details/skills/",
+		href: "https://www.typescriptlang.org/"
 	},
 	{
 		name: "GIT",
 		description: "I use Git for version control and collaboration on projects, ensuring that changes are tracked, organized, and safely stored. I am familiar with basic Git commands such as pull, push, merge, and commit.",
-		link: "Learn more"
+		link: "Learn more",
+		linkHref: "https://www.linkedin.com/in/maksymshydlovskyi/details/skills/",
+		href: "https://git-scm.com/"
 	}
 ]
 
@@ -65,7 +73,7 @@ const Services = () => {
 						<div>
 							{services.map((service, index) => {
 								//destructure service
-								const { name, description, link } = service
+								const { name, description, link, linkHref, href } = service
 								return (
 									<div className='border-b border-white/20 lg:h-[150px] mb-[50px] flex md:h-[200px]' key={index}>
 										<div className='max-w-[476px]'>
@@ -73,8 +81,8 @@ const Services = () => {
 											<p className='font-secondary leading-tight'>{description}</p>
 										</div>
 										<div className='flex flex-col flex-1 items-end'>
-											<a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'><BsArrowUpRight /></a>
-											<a href="#" className='text-gradient text-sm'>{link}</a>
+											<a href={href} target="_blank" rel="noreferrer" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'><BsArrowUpRight /></a>
+											<a href={linkHref} target="_blank" rel="noreferrer" className='text-gradient text-sm'>{link}</a>
 										</div>
 									</div>
 								)

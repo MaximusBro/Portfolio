@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll"
+import ContactBtns from '../UI/ContactBtns';
 const Banner = () => {
 	return <section className='h-full flex items-center mb-[100px]' id='home'>
 		<div className="container mx-auto">
@@ -55,24 +55,7 @@ const Banner = () => {
 						whileInView={"show"}
 						viewport={{ once: true, amount: 0.7 }}
 						className='flex gap-x-6 items-center mb-12  max-w-max mx-auto lg:mx-0'>
-						<Link
-							smooth={true}
-							spy={true}
-							to='contact'
-							as='button'
-							className=' cursor-pointer btn btn-lg text-center items-center flex'>
-							Contact me
-						</Link>
-
-						<Link
-							smooth={true}
-							spy={true}
-
-							to='work'
-							as='a'
-							className=' cursor-pointer text-gradient btn-link bg-inherit'>
-							Portfolio
-						</Link>
+						<ContactBtns />
 					</motion.div>
 					<motion.div initial="hidden"
 						variants={fadeIn("up", 0.8)}
