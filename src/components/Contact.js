@@ -32,7 +32,7 @@ const Contact = () => {
 			setErrorForm(state => {
 				return {
 					...state,
-					status: true
+					status: false
 				}
 			})
 		}, time)
@@ -50,7 +50,8 @@ const Contact = () => {
 				setLoading(false);
 				messageResult(setIsSubmited, 2000)
 				onSubmitProps.resetForm();
-			}).catch(error => {
+			})
+			.catch(error => {
 				setLoading(false);
 				errorMessage(setErrorForm, 3000)
 				console.log(error.text);
