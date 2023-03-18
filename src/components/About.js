@@ -23,7 +23,7 @@ const About = () => {
 					initial="hidden"
 					whileInView={"show"}
 					viewport={{ once: true, amount: 0.3 }}
-					className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten
+					className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] 
 				bg-top'></motion.div>
 				{/* text */}
 				<motion.div
@@ -35,7 +35,7 @@ const About = () => {
 					<h2 className='h2 text-accent'>About me.</h2>
 					<h3 className='h3 mb-4'>I'm a Front-end developer with over 1 year of experience.</h3>
 					<p className='mb-6'>Specializing
-						in creating responsive and user-friendly interfaces using modern web technologies such as HTML5, CSS3, and JavaScript.
+						in creating responsive and user-friendly interfaces using modern web technologies such as HTML5, CSS3, JavaScript and React.
 					</p>
 					{/* stats */}
 					<div className='flex gap-x-6 lg:gap-x-10 mb-12'>
