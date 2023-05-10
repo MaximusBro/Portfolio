@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 //img
 import img1 from "../assets/MarvelProjScreen.png";
-import img2 from "../assets/infinazalProjScreen.png";
-import img3 from "../assets/BlogFrontendScreen.png";
+import img2 from "../assets/netflix-clone.png";
+import img3 from "../assets/material-ui-education.png";
 const Work = () => {
 	return (
 		<section className='section h-full' id='work'>
@@ -32,7 +32,7 @@ const Work = () => {
 							<img className='group-hover:scale-125 transition-all duration-500' src={img1} alt="" />
 							{/* pretitle */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-								<span className='text-gradient'>Marvel Project</span>
+								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://maximusbro.github.io/Marvel-Project--React-/'>Marvel Project</a></span>
 							</div>
 							{/* title */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
@@ -54,11 +54,11 @@ const Work = () => {
 							<img className='group-hover:scale-125 transition-all duration-500' src={img2} alt="" />
 							{/* pretitle */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-								<span className='text-gradient'>Infinizal Project</span>
+								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://clone-popular-videos.vercel.app/auth'>Netflix clone</a></span>
 							</div>
 							{/* title */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-								<p className=' text-xl text-white'>Static landing page layout with the ability to expand to an online store</p>
+								<p className=' text-xl text-white'>Fullstack app using Next.js, MongoDB, Prisma</p>
 							</div>
 						</div>
 						{/* image */}
@@ -69,11 +69,11 @@ const Work = () => {
 							<img className='group-hover:scale-125 transition-all duration-500' src={img3} alt="" />
 							{/* pretitle */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-								<span className='text-gradient'>Front-end blog</span>
+								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://material-ui-education.vercel.app/'>Meterial UI Education</a></span>
 							</div>
 							{/* title */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-								<span className='text-xl text-white'>Blog on React, Express, Firebase.</span>
+								<span className='text-xl text-white'>A simple website created with Material UI</span>
 							</div>
 						</div>
 					</motion.div>
