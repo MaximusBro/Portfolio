@@ -54,7 +54,7 @@ const Work = () => {
 							<img className='group-hover:scale-125 transition-all duration-500' src={img2} alt="" />
 							{/* pretitle */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://clone-popular-videos.vercel.app/auth'>Netflix clone</a></span>
+								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://clone-popular-videos-maximusbro.vercel.app/auth'>Netflix clone</a></span>
 							</div>
 							{/* title */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
