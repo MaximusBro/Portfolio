@@ -6,7 +6,7 @@ import { fadeIn } from '../variants';
 //img
 import img1 from "../assets/MarvelProjScreen.png";
 import img2 from "../assets/netflix-clone.png";
-import img3 from "../assets/material-ui-education.png";
+import img3 from "../assets/uujobsScreen.png";
 const Work = () => {
 	return (
 		<section className='section h-full' id='work'>
@@ -69,11 +69,11 @@ const Work = () => {
 							<img className='group-hover:scale-125 transition-all duration-500' src={img3} alt="" />
 							{/* pretitle */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://material-ui-education.vercel.app/'>Meterial UI Education</a></span>
+								<span className='text-gradient'><a target="_blank" rel="noreferrer" href='https://uujobs.ca/'>UUJobs</a></span>
 							</div>
 							{/* title */}
 							<div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-								<span className='text-xl text-white'>A simple website created with Material UI</span>
+								<span className='text-xl text-white'>Commercial job search project</span>
 							</div>
 						</div>
 					</motion.div>
